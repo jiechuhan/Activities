@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+}
+
+.head {
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: flex;
+}
+
+.bio {
+    float: left;
+    overflow: hidden;
+    flex: 2;
+    margin-right: 20px;
+}
+
+.bio img {
+    float: left;
+    margin-right: 20px;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
+.contact {
+    flex: 1;
+}
+
+ul {
+    padding-left: 35px;
+    line-height: 1.5;
+}
