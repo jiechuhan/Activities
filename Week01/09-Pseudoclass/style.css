@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a.one:hover {
+    background-color: red;
+    color: white;
+}
+
+a.one:active {
+    background-color: yellow;
+    color: purple;
+}
+
+a.two:hover {
+    background-color: purple;
+    color: white;
+}
+
+a.two:focus {
+    background-color: blue;
+    color: beige;
+}
+
+a.three:hover {
+    border: 2px solid brown;
+    color: green;
+}
+
+a.three:hover {
+    border: 2px solid brown;
+    color: green;
+}
+
+a.three:focus {
+    background-color: aqua;
+}
+
+.paragraph {
+    font-size: 1.1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 2em;
+    width: 30%;
+    padding: 2%;
+}
+
+p.paragraph::first-line {
+    color: #ff0000;
+    text-transform: uppercase;
+}
+
+p.paragraph::first-letter {
+    font-size: 5em;
+    color: purple;
+    font-family: 'Courier New', Courier, monospace;
+}
