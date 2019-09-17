@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // var win = 0
+    // var turn = 10
+
+    // for (i=0; i<10; i++) {
+    //     var choice = ["rock", "paper", "scissors"];
+    //     var user = prompt("Choose from rock, paper, scissors").toLocaleLowerCase();
+    //     var computer = choice[Math.floor(Math.random()*choice.length)];
+
+    //     if (user === computer) {
+    //         alert("you tie");
+    //     } else if ( user === "rock" && computer === "paper") {
+    //         alert("computer choose " + computer + " so, you lose, computer win")
+    //     } else if ( user === "rock" && computer === "scissors") {
+    //         alert("computer choose " + computer + " so you win, computer lose")
+    //     } else if ( user === "paper" && computer === "rock") {
+    //         alert("computer choose " + computer + " so you win, computer lose")
+    //     } else if ( user === "paper" && computer === "scissors") {
+    //         alert("computer choose " + computer + " so you lose, computer win")
+    //     } else if ( user === "scissors" && computer === "paper") {
+    //         alert("computer choose " + computer + " so you win, computer lose")
+    //     } else if ( user === "scissors" && computer === "rock") {
+    //         alert("computer choose " + computer + " so you lose, computer win")
+    //     }
+    // }
+
+    let C = computerWins;
+    let U = userWins;
+    let X = tie;
+
+    function computerWins() {
+    console.log('computer wins');
+    }
+
+    function userWins() {
+    console.log('user wins');
+    }
+
+    function tie() {
+    console.log('tie');
+    }
+    let foo = [
+    [' ', 'R', 'P', 'S'],
+    ['R',  X,   C,   U],
+    ['P',  U,   X,   C],
+    ['S',  C,   U,   X]
+    ];
+
+    let user = Math.floor((Math.random() * 3) + 1);
+    let computer = Math.floor((Math.random() * 3) + 1);
+
+    console.log('user: ' + foo[0][user], 'computer: ' + foo[0][computer]);
+    foo[user][computer]();
+    
+    </script>
+</body>
+</html>
