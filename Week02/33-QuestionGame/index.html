@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var question = [
+            {q: "you like swimming", a: true},
+            {q: "you don't eat breakfast", a: false},
+            {q: "you are an adult", a: true},
+            {q: "you drink sprite today", a: false},
+            {q: "your hair is black", a: true},
+            {q: "you like Coke", a: true},
+            {q: "you like exercise", a: false},
+            {q: "you can speak English", a: true},
+            {q: "you wear glasses", a: false},
+            {q: "you have a big bottle", a: false}
+        ];
+
+        for (i=0; i<question.length; i++) {
+            var answer = confirm(question[i].q);           
+            if (answer === question[i].a) {
+                alert("you are correct")
+            } else {
+                alert("you are wrong")
+            };
+        };
+        
+    
+    
+    
+    </script>
+</body>
+</html>
