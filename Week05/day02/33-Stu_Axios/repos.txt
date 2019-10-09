@@ -1,0 +1,13 @@
+Activities
+Developer-Profile-Generator
+jiechuhan.github.io
+NYT-Search
+Basic-Portfolio
+Password-Generator
+Code-Quiz
+Project-1
+Day-Planner
+Updated-Portfolio
+Responsive-Portfolio
+prework-about-me
+Weather-Dashboard

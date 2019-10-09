@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="./MOCK_DATA.js"></script>
+    <script> 
+        function getByState(data, state) {
+            let rval = [];
+            //
+            // code to select elements from data where 
+            // element.state === state
+            // put each matching element in rval
+            for (i = 0; i < data.length; i++) {
+                if (data[i].state === state) {
+                    rval.push(data[i])
+                }
+            }
+
+            rval = data.filter(function(element) {
+                return element.state === state;
+            })
+
+            return rval;
+        }
+
+        console.log(getByState(data, "Texas"))
+
+
+
+    </script>
+
+</body>
+
+</html>
